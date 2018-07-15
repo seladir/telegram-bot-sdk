@@ -1435,7 +1435,7 @@ class Api
      *
      * @return TelegramResponse
      */
-    protected function post($endpoint, array $params = [], $fileUpload = false)
+    public function post($endpoint, array $params = [], $fileUpload = false)
     {
         if ($fileUpload) {
             $params = ['multipart' => $params];
