@@ -925,7 +925,7 @@ class Api
      *
      * @return TelegramResponse
      */
-    protected function get($endpoint, $params = [])
+    public function get($endpoint, $params = [])
     {
         return $this->sendRequest(
             'GET',
